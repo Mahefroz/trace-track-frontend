@@ -1,0 +1,104 @@
+.vertical-nav {
+  flex-direction: column;
+  min-width: 15rem;
+  background-color: #ececec;
+  width: 15rem;
+  height: 100vh;
+  position: fixed;
+
+  /* top: 0; */
+  left: 0;
+  /* box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1); */
+  transition: all 0.4s;
+}
+.navbar {
+  /* height: 89vh; */
+  margin-right: 30px;
+  flex-direction: column;
+}
+.dropdown-menu {
+  position: relative !important;
+}
+.hide {
+  display: none;
+}
+.list {
+  list-style-type: none;
+  font-weight: 100;
+  margin-top: 10px;
+  width: 100%;
+  font-size: 10px;
+}
+.list-items {
+  font-size: small;
+  margin-left: 0px;
+  padding: 0px;
+  width: 100% !important;
+}
+
+/* .nav-link {
+}
+.nav-link:active {
+  background-color: grey;
+  border: 1px solid grey;
+  border-radius: 6px;
+  width: 100%;
+} */
+
+#sidebar a.active {
+  font-size: medium;
+
+  color: #386086 !important;
+  font-weight: 600;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none !important;
+  margin-bottom: 0px !important;
+}
+#sidebar a:hover {
+  color: #67748e !important;
+}
+
+#sidebar a.inactive {
+  font-size: medium;
+  color: #67748e !important;
+
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none !important;
+}
+
+/* Style the active class (and buttons on mouse-over) */
+/* #sidebar.active {
+  margin-left: -17rem;
+}
+
+#content.active {
+  width: 100%;
+  margin: 0;
+} */
+/* @media (max-width: 768px) {
+  #sidebar {
+    margin-left: -17rem;
+  }
+  #sidebar.active {
+    margin-left: 0;
+  }
+  #content {
+    width: 100%;
+    margin: 0;
+  }
+  #content.active {
+    margin-left: 17rem;
+    width: calc(100% - 17rem);
+  }
+} */
+/* 
+.text-uppercase {
+  letter-spacing: 0.1em;
+}
+.text-gray {
+  color: #aaa;
+} */

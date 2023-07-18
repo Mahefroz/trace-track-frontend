@@ -1,0 +1,75 @@
+import React from "react";
+import CategorySettingsComp from "../../components/Settings/CategorySettings.js/CategorySettingsComp";
+import TaggingMethodComp from "../../components/Settings/CategorySettings.js/TaggingMethodComp";
+import Nav from "../../components/Navbar/Nav";
+import PropTypes from "prop-types";
+import { Box, Typography, Tab, Tabs } from "@mui/material";
+
+function TabPanel(props) {
+  const { children, value, index, ...other } = props;
+
+  return (
+    <div
+      role="tabpanel"
+      hidden={value !== index}
+      id={`simple-tabpanel-${index}`}
+      aria-labelledby={`simple-tab-${index}`}
+      {...other}
+    >
+      {value === index && (
+        <Box sx={{ p: 3 }}>
+          <Typography>{children}</Typography>
+        </Box>
+      )}
+    </div>
+  );
+}
+
+TabPanel.propTypes = {
+  children: PropTypes.node,
+  index: PropTypes.number.isRequired,
+  value: PropTypes.number.isRequired,
+};
+
+function a11yProps(index) {
+  return {
+    id: `simple-tab-${index}`,
+    "aria-controls": `simple-tabpanel-${index}`,
+  };
+}
+
+const CategorySettings = () => {
+  const [value, setValue] = React.useState(0);
+
+  const handleChange = (event, newValue) => {
+    setValue(newValue);
+  };
+  return (
+    <Box sx={{ width: "100%" }}>
+      <Nav />
+      <Box sx={{ borderBottom: 1, borderColor: "divider" }}>
+        <Tabs
+          centered
+          value={value}
+          onChange={handleChange}
+          aria-label="basic tabs example"
+        >
+          <Tab label="Categories" {...a11yProps(0)} />
+          <Tab label="Tagging Methods" {...a11yProps(1)} />
+          {/* <Tab label="Item Three" {...a11yProps(2)} /> */}
+        </Tabs>
+      </Box>
+      <TabPanel value={value} index={0}>
+        <CategorySettingsComp />
+      </TabPanel>
+      <TabPanel value={value} index={1}>
+        <TaggingMethodComp />
+      </TabPanel>
+      {/* <TabPanel value={value} index={2}>
+        Item Three
+      </TabPanel> */}
+    </Box>
+  );
+};
+
+export default CategorySettings;

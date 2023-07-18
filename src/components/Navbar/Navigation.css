@@ -1,0 +1,47 @@
+.navbar {
+  height: 89vh;
+  flex-direction: column;
+}
+
+#sidebar a.active {
+  color: aqua;
+  text-decoration: none;
+}
+
+.nav-links {
+  list-style: none;
+}
+
+.nav-link {
+  color: #888989;
+  text-decoration: none;
+}
+
+.hospital-nav-wrapper .del-btn {
+  padding: 0;
+  border: 0;
+  color: #888989;
+}
+
+/* X-Small devices (portrait phones, less than 576px)
+  No media query for `xs` since this is the default in Bootstrap */
+
+@media (max-width: 575.98px) {
+  .hospital-nav-wrapper .del-btn {
+    color: #fff;
+  }
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .hospital-nav-wrapper .del-btn {
+    color: #fff;
+  }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .hospital-nav-wrapper .del-btn {
+    color: #fff;
+  }
+}

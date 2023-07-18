@@ -1,0 +1,83 @@
+.main-container {
+  display: block;
+  margin: 20px;
+}
+.data {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  margin-top: 2px;
+}
+.list {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  /* margin-left: 20px; */
+}
+.no {
+  width: 2%;
+}
+
+.elem {
+  width: 20%;
+  margin-left: 5px;
+  min-width: 200;
+}
+.icon {
+  padding: 10%;
+  margin: 10px;
+}
+.icon:hover {
+  cursor: pointer;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  margin-left: 5px;
+  /* margin: 10px; */
+  justify-content: flex-start;
+}
+.add {
+  display: flex;
+  flex-direction: row;
+  width: 76.5%;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+.section {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: 5px 30px 0px 0px;
+  justify-content: center;
+}
+.heading {
+  display: flex;
+  flex-direction: row;
+  background-color: #aeb7f7;
+  color: #fff;
+  margin-top: 10px;
+  /* margin-bottom: 10px; */
+  padding: 10px;
+  border-radius: 6px;
+  font-weight: bold;
+}
+
+.btn {
+  width: 20%;
+  margin-left: 0px;
+}
+.submit {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  margin-top: 2px;
+  justify-content: flex-end;
+}
+.qr-download {
+  width: 20%;
+  /* margin-top: 20px; */
+}

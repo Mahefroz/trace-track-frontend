@@ -1,0 +1,152 @@
+ const [allAssets, setAllAssets] = useState([]);
+  const [business, setBusiness] = useState("");
+  const [values, setValues] = useState({
+    assetNo: null,
+    name: "",
+    desc: "",
+    status: "",
+    lat: null,
+    long: null,
+  });
+  const [error, setError] = useState({
+    assetNo: false,
+    name: false,
+    desc: false,
+    status: false,
+    lat: false,
+    long: false,
+  });
+
+ // const handleChange = (prop) => async (event) => {
+  //   let input = event.target.value;
+  //   console.log("change", prop, input.length);
+
+  //   await setValues({ ...values, [prop]: event.target.value });
+  //   const validate = {
+  //     assetNo: error.assetNo,
+  //     name: error.name,
+  //     desc: error.desc,
+  //     status: error.status,
+  //     lat: error.lat,
+  //     long: error.long,
+  //   };
+
+  //   if (prop === "assetNo" && input.length === 0) {
+  //     validate.assetNo = true;
+  //   } else if (prop === "assetNo" && input.length === 0) {
+  //     validate.assetNo = false;
+  //   }
+  //   if (prop === "name" && input.length === 0) {
+  //     validate.name = true;
+  //   } else if (prop === "name" && input.length === 0) {
+  //     validate.name = false;
+  //   }
+  //   if (prop === "desc" && input.length === 0) {
+  //     validate.desc = true;
+  //   } else if (prop === "desc" && input.length === 0) {
+  //     validate.desc = false;
+  //   }
+  //   if (prop === "status" && input.length === 0) {
+  //     validate.status = true;
+  //   } else if (prop === "status" && input.length === 0) {
+  //     validate.status = false;
+  //   }
+
+  //   console.log("Validate on change", validate);
+
+  //   await setError({
+  //     ...error,
+  //     ...validate,
+  //   });
+
+  //   // setAge(event.target.value);
+  // };
+  // console.log("Error", error);
+
+  // const handleSubmit = async () => {
+  //   console.log("Values", values);
+  //   // console.log("Error", error);
+  //   const validate = {
+  //     assetNo: false,
+  //     name: false,
+  //     desc: false,
+  //     status: false,
+  //     lat: false,
+  //     long: false,
+  //   };
+  //   if (values.assetNo.length === 0 || values.assetNo === null) {
+  //     validate.assetNo = true;
+  //   } else {
+  //     validate.assetNo = false;
+  //   }
+  //   if (values.name.length === 0 || values.name === null) {
+  //     validate.name = true;
+  //   } else {
+  //     validate.name = false;
+  //   }
+  //   if (values.desc.length === 0 || values.desc === null) {
+  //     validate.desc = true;
+  //   } else {
+  //     validate.desc = false;
+  //   }
+  //   if (values.status.length === 0 || values.status === null) {
+  //     validate.status = true;
+  //   } else {
+  //     validate.status = false;
+  //   }
+
+  //   if (values.lat === null || values.lat.length === 0) {
+  //     validate.lat = true;
+  //   } else {
+  //     validate.lat = false;
+  //   }
+  //   if (values.long === null) {
+  //     validate.long = true;
+  //   } else {
+  //     validate.long = false;
+  //   }
+
+  //   // console.log("Validate on submit", validate);
+  //   if (
+  //     validate.assetNo === false &&
+  //     validate.name === false &&
+  //     validate.desc === false &&
+  //     validate.status === false &&
+  //     validate.lat === false &&
+  //     validate.long === false
+  //   ) {
+  //     console.log("Submit");
+  //     // try {
+  //     //   const details = {
+  //     //     "business name": values.business,
+  //     //     "Customer name": values.name,
+  //     //     "Phone no": values.pno,
+  //     //     email: values.email,
+  //     //   };
+  //     //   const payload = {
+  //     //     type: "customer",
+  //     //     cnic: values.cnic,
+  //     //     details: details,
+  //     //     lat: values.lat,
+  //     //     long: values.long,
+  //     //   };
+  //     //   const res = await addBusinessLoc(payload);
+  //     //   console.log("Api Response", res);
+  //     //   if (res) {
+  //     //     // navigate("/dashboard");
+  //     //   }
+  //     // } catch (err) {
+  //     //   console.log("Error", err);
+  //     // }
+  //   } else {
+  //     // setError({ ...error, ...validate });
+  //     console.log("Invalid");
+  //   }
+  //   await setError({ ...error, ...validate });
+  //   // setError({ ...error, name: true });
+  // };
+  // console.log("Values", values);
+  // console.log("Error", error);
+
+
+   

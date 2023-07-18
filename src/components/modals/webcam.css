@@ -1,0 +1,32 @@
+.webcam-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  margin: auto;
+  padding: 10px 0;
+  justify-content: center;
+}
+.webcam-row {
+  display: flex;
+  flex-direction: row;
+}
+.webcam-img {
+  border: 1px solid transparent;
+  border-radius: 6px;
+}
+.webcam-btn {
+  margin-top: 10px;
+  width: 33%;
+}
+.head {
+  font-weight: 800;
+  margin: 10px 20px 0px 0px;
+  color: blue;
+  font-size: large;
+}
+.upload {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}

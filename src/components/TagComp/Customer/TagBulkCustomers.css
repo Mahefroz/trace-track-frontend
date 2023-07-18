@@ -1,0 +1,55 @@
+.main-container {
+  display: block;
+  margin: 20px;
+}
+.data {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  margin-top: 2px;
+}
+.field {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  margin-left: 5px;
+  /* margin: 10px; */
+  justify-content: flex-start;
+}
+
+.section {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: 5px;
+  justify-content: center;
+}
+.heading {
+  display: flex;
+  flex-direction: row;
+  background-color: #aeb7f7;
+  color: #fff;
+  margin-top: 10px;
+  /* margin-bottom: 10px; */
+  padding: 10px;
+  border-radius: 6px;
+  font-weight: bold;
+}
+
+.btn {
+  width: 20%;
+  margin-left: 0px;
+}
+.btn-field {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  margin-right: 20px;
+  margin-top: 2px;
+}
+.submit {
+  width: 100%;
+  margin-top: 2px;
+
+  justify-content: flex-end;
+}

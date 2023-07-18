@@ -1,0 +1,35 @@
+.signup-wraper {
+  height: 100vh;
+  display: flex;
+  color: white;
+  /* margin-top: 10px; */
+  /* margin-bottom: 20px; */
+}
+
+.signup-card {
+  width: 500px;
+  margin: auto;
+  color: black;
+  background-color: white;
+  padding: 10px;
+  border-radius: 12px;
+  align-items: center;
+}
+.heading {
+  /* background-color: white;
+  color: black; */
+  justify-content: center;
+  text-align: center;
+  margin-bottom: 4;
+}
+.forget {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  width: 60%;
+  cursor: pointer;
+}
+.row {
+  display: inline-flex;
+  font-size: 12;
+}
